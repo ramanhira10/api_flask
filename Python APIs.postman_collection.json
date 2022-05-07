@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "5fc03b56-0512-4671-9c20-ce4859c75dc4",
+		"name": "Python APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Store items by store name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/store/beautiful store/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"store",
+						"beautiful store",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Store by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7070/store/beautiful store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"store",
+						"beautiful store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post store name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    'name':'beautiful store 3'\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7070/store?name=beautiful store 3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "beautiful store 3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post store item by store name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    'name':'beautiful store 3'\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7070/store?name=beautiful store 3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7070",
+					"path": [
+						"store"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "beautiful store 3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
